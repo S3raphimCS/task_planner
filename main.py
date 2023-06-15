@@ -31,6 +31,16 @@ def close_db(db):
         print('Возникла ошибка в close_db')
 
 
+def check_db():
+    db, cursor = connect_db(DB_NAME)
+    cursor.execute('''CREATE TABLE IF NOT EXISTS tasks (
+    id        INTEGER PRIMARY KEY Autoincrement,
+    task      STRING  NOT NULL,
+    completed BOOLEAN NOT NULL,
+    date      DATE    NOT NULL
+);''')
+
+
 # Поток для отправки уведомлений в фоновом режиме
 class NotificationThread(QThread):
     def __init__(self, mainwindow=None, parent=None):
@@ -215,6 +225,7 @@ class GUI(QtWidgets.QMainWindow):
 
 
 if __name__ == '__main__':
+    check_db()
     app = QtWidgets.QApplication(sys.argv)
     window = GUI()
     window.show()
