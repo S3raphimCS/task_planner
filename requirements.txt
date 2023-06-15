@@ -1,0 +1,9 @@
+antiorm==1.2.1
+db==0.1.1
+db-sqlite3==0.0.1
+pypiwin32==223
+PyQt5==5.15.9
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.12.1
+pywin32==306
+schedule==1.2.0

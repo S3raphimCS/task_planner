@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1027</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>991</width>
+    <height>580</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>120</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>1</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Century Gothic</family>
+           <pointsize>28</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(169, 207, 255);
+font: 28pt &quot;Century Gothic&quot;;
+color: rgb(255, 255, 255);
+border-radius: 10px;
+</string>
+         </property>
+         <property name="text">
+          <string>Планировщик задач</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QCalendarWidget" name="calendarWidget">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>471</width>
+               <height>271</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt;</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QListWidget" name="listWidget">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>70</y>
+               <width>401</width>
+               <height>271</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="save_changes_button">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>360</y>
+               <width>401</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: rgb(169, 207, 255);
+	font: 15pt &quot;Century Gothic&quot;;
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0 20px #999;
+	cursor: pointer;
+}
+
+QPushButton:hover {
+	background-color: rgb(119, 148, 184);
+}
+
+QPushButton:pressed {
+  background-color: rgb(100, 120, 150);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Сохранить изменения</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="add_new_button">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>30</y>
+               <width>131</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: rgb(169, 207, 255);
+	font: 15pt &quot;Century Gothic&quot;;
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0 20px #999;
+	cursor: pointer;
+}
+
+QPushButton:hover {
+	background-color: rgb(119, 148, 184);
+}
+
+QPushButton:pressed {
+  background-color: rgb(100, 120, 150);
+}</string>
+             </property>
+             <property name="text">
+              <string>Добавить</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>30</y>
+               <width>261</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 75 14pt &quot;Century Gothic&quot;;
+border-radius: 10px;</string>
+             </property>
+            </widget>
+            <zorder>listWidget</zorder>
+            <zorder>add_new_button</zorder>
+            <zorder>save_changes_button</zorder>
+            <zorder>lineEdit</zorder>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1027</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
